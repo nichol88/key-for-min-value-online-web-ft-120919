@@ -3,10 +3,10 @@
 
 def key_for_min_value(name_hash)
 
-  name_hash.inject (0) { |memo, item|
+  name_hash.inject (0) { |memo, key, value|
     if item > memo
       memo = item
     end
   }
-  
+
 end
