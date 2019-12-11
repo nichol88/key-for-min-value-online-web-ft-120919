@@ -3,7 +3,7 @@
 
 def key_for_min_value(name_hash)
   return nil if name_hash.empty?
-  
+
   result = nil
   name_hash.each{|key, value|
     if result == nil
@@ -13,6 +13,6 @@ def key_for_min_value(name_hash)
         result = key
       end
     end
-    
+
   }
 end
