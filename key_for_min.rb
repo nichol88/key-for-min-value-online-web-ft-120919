@@ -3,8 +3,16 @@
 
 def key_for_min_value(name_hash)
   return nil if name_hash.empty?
+  
   result = nil
   name_hash.each{|key, value|
-
+    if result == nil
+      result.push(key)
+    else
+      if value < name_hash[result]
+        result = key
+      end
+    end
+    
   }
 end
